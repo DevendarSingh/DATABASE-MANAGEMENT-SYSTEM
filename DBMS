@@ -1,0 +1,47 @@
+//How To create TAble 
+CREATE TABLE PU
+(
+enumber int primary key, ename varchar(50) not null,
+job varchar(50), manager_no int, dept varchar(50) not null,
+salary int not null
+);
+
+//How TO Insert Values In Table
+INSERT INTO PU(Enumber,ENAME,JOB,Manager_NO,DEPT,SALARY) VALUES('1003','RAKESH','ASSISSTANT','104','CSE','3000');
+
+//Display Crearted Table 
+SELECT *FROM CU;
+
+//Add column Commission Column in table with data type number and null value are allowed :
+ALTER TABLE pu ADD COMMISSION INT;
+
+//Insert value into Commission Column 
+UPDATE EMPLOYEE SET COMMISSION='1000' WHERE ENO='1003';
+
+//Rename column Manager_no to Manager_name and later drop the column :
+ALTER TABLE pu CHANGE MANAGER_NO MANAGER_NAME;
+
+//Update the table to set default commission of all employees working as manager to 2000 :
+ALTER TABLE pu ALTER COMMISSION SET DEFAULT '2000' WHERE JOB='MANAGER';
+
+//Delete all records working as Assisstant :
+DELETE FROM PU WHERE JOB='ASSISSTANT';
+
+//Display only those department is CSE :
+SELECT * FROM PU WHERE DEPARTMENT='CSE';
+
+//TO Find Minimum Value in a Particular Column of a Table
+SELECT MIN(COMMISION) AS SMALLEST_PRICE FROM PU;
+
+//TO Find Maximum Value in a Particular Column of a Table
+SELECT MAX(COMMISION) AS HIGGER_PRICE FROM PU;
+
+
+
+
+
+
+
+
+
+
