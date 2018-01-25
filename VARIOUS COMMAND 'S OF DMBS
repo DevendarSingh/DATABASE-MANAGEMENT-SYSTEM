@@ -1,0 +1,18 @@
+//COUNT Function returns the number of rows that matches a specified criteria.
+SELECT COUNT(ENUMBER) FROM PU;
+
+//Average(AVG) Function returns the average value of a numeric column
+SELECT AVG(COMMISION) FROM PU;
+
+//SUM Function returns the total sum of a numeric column.
+SELECT SUM(SALARY) FROM PU;
+
+//SELECT DISNICT COMMAND
+SELECT ENUMBER FROM PU;
+
+//WHERE clause is used to filter records.
+SELECT * FROM PU
+WHERE DEPT='ACCOUNTS';
+
+
+
